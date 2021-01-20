@@ -134,6 +134,9 @@
                     <a href="{{route('admin.page',['quality'])}}" class="bg-indigo-800 hover:bg-indigo-700 text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                       Quality
                     </a>
+                    <a href="{{route('admin.page',['about'])}}" class="bg-indigo-800 hover:bg-indigo-700 text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                      About
+                    </a>
                   </nav>
               </div>
 
@@ -218,6 +221,9 @@
                     </a>
                     <a href="{{route('admin.page',['quality'])}}" class="bg-indigo-800 hover:bg-indigo-700 text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
                       Quality
+                    </a>
+                    <a href="{{route('admin.page',['about'])}}" class="bg-indigo-800 hover:bg-indigo-700 text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md">
+                      About
                     </a>
                   </nav>
               </div>

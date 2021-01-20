@@ -8,7 +8,7 @@ use App\Models\Product;
 use App\Models\Project;
 use App\Models\RedxSpecific;
 use App\Models\Gallery;
-use App\Models\page;
+use App\Models\Page;
 class HomeController extends Controller
 {
     /** show home page
