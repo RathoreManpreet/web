@@ -124,7 +124,7 @@
                 <div class="flex flex-col mt-8 sm:mt-0 px-6">
 
                     <dd class=" mt-2 text-lg leading-6 font-medium text-gray-700">
-                     {{$data->short_description}}
+                     {!! $data->short_description !!}
                     </dd>
                    
 
