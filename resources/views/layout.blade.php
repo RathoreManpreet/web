@@ -105,7 +105,13 @@
                                 </div>
                             </div>
                         </div>
-                        <?php $redx_specific = new App\Models\RedxSpecific;?>
+                        <?php
+                            $slug = "";
+                            $redx_specific = new App\Models\RedxSpecific;
+                            if($redx_specific->firstRexSpecific()) {
+                                    $slug = $redx_specific->firstRexSpecific()->slug;
+                            }
+                        ?>
 
                         <a href="{{route('redx-specific',[$redx_specific->firstRexSpecific()->slug])}}" class="text-base font-medium text-gray-500 hover:text-gray-900">
                             Redx Specific
