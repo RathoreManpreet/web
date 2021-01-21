@@ -53,8 +53,8 @@
     <!--banner-->
 
     <div class="relative bg-gray-40  w-full  h-full">
-        <video class="w-full" src="https://glh-chemist.s3.ap-south-1.amazonaws.com/My+Video.mp4" autoplay muted loop="true"
-            controls="true"></video>
+        <video class="w-full" src="https://glh-chemist.s3.ap-south-1.amazonaws.com/My+Video.mp4" autoplay="true"
+            muted></video>
         {{-- <div class="absolute top-0 w-full h-full bg-black opacity-50"></div>
         --}}
 
@@ -62,7 +62,7 @@
     </div>
 
 
-   
+
     <!--who we are -->
     <div class="relative bg-white overflow-hidden">
 
@@ -251,7 +251,7 @@
             <main>
                 <video class="w-full"
                     src="https://glh-chemist.s3.ap-south-1.amazonaws.com/RedX+Industries+Corporate+Video.mp4"
-                    autoplay="true" loop="true" controls="true"></video>
+                    controls="true"></video>
             </main>
         </div>
     </div>
@@ -464,13 +464,13 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="fixed z-10 inset-0 overflow-y-auto hidden preview-modal">
         <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-             <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
                 <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
             </div>
 
             <!-- This element is to trick the browser into centering the modal contents. -->
             <span class=" sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-           <div class=" text-right inline-block align-bottom rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl lg:max-w-4xl sm:w-full sm:p-6"
+            <div class=" text-right inline-block align-bottom rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-xl lg:max-w-4xl sm:w-full sm:p-6"
                 role="dialog" aria-modal="true" aria-labelledby="modal-headline">
                 <div>
                     <span class="close-model"><i class="fas fa-times text-lg"></i></span>
