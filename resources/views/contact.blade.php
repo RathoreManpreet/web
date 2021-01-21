@@ -78,9 +78,19 @@
                 <div class="absolute inset-0 h-1/2 bg-gray-50"></div>
                 <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
                     <div>
-                        <dl class="rounded-lg bg-white shadow-lg md:grid sm:grid-cols-3">
+                        <dl class="rounded-lg bg-white shadow-lg md:grid sm:grid-cols-2">
+                          <!-- <div
+                                class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l bg-gray-800">
+                                <div>
+                                  <h2 class="text-2xl font-extrabold text-white-900 sm:text-3xl">
+                                    COntact Details
+                                  </h2>
+                                 
+                                </div>
+
+                            </div> -->
                             <div
-                                class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r bg-gray-600">
+                                class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r bg-gray-700">
                                 <div>
                                   <h2 class="text-2xl font-extrabold text-white-900 sm:text-3xl">
                                     Head Office
@@ -126,7 +136,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r bg-gray-700">
+                                class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r bg-gray-800">
                                 <div>
                                   <h2 class="text-2xl font-extrabold text-white-900 sm:text-3xl">
                                     Sales Office
@@ -172,53 +182,7 @@
                                 </div>
 
                             </div>
-                            <div
-                                class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l bg-gray-800">
-                                <div>
-                                  <h2 class="text-2xl font-extrabold text-white-900 sm:text-3xl">
-                                  RedX Trading
-                                  </h2>
-                                  <div class="mt-3">
-                                    <p class="text-lg text-white-500">
-                                    Aluminum & Carpetnry
-                                    </p>
-                                  </div>
-                                  <div class="mt-9">
-                                    <div class="flex">
-                                      <div class="flex-shrink-0">
-                                      <i class="fas fa-phone-alt text-white-600"></i>
-                                      </div>
-                                      <div class="ml-3 text-base text-white-500">
-                                        <p>
-                                        <a href="tel:9731714112">(+973) 17141122</a>
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div class="mt-6 flex">
-                                      <div class="flex-shrink-0">
-                                          <i class="fas fa-fax text-white-600"></i>
-                                      </div>
-                                      <div class="ml-3 text-base text-white-500">
-                                        <p>
-                                        (+973) 17141133
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div class="mt-6 flex">
-                                      <div class="flex-shrink-0">
-                                          <i class="fas fa-envelope-open-text text-white-600"></i>
-                                      </div>
-                                      <div class="ml-3 text-base text-white-500">
-                                        <p>
-                                          redxtrading@gmail.com
-                                        </p>
-                                      </div>
-                                    </div>
-                                  
-                                  </div>
-                                </div>
-
-                            </div>
+                          
 
                         </dl>
                     </div>
