@@ -255,6 +255,14 @@
                     </p>
 
                 </div>
+
+                <?php
+                            $slug = "";
+                            $event = new App\Models\ParticipationEvent;
+                            if($event->firstEvent()) {
+                                    $slug = $event->firstEvent()->slug;
+                            }
+                        ?>
                 <div class="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
                     <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
                         <a href="{{asset('assets/documents/RedXIndustries.pdf')}}" target="blank" class=""><img src="{{ asset('assets/image/Brochure-Download.png') }}" alt="Tuple"></a>
@@ -264,12 +272,15 @@
                         <a href="{{route('quality')}}" class=""><img src="{{ asset('assets/image/Laboratory.png') }}" alt="Tuple"></a>
                         
                     </div>
-                    <!-- <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                        <img src="{{ asset('assets/image/Participations.png') }}" alt="Tuple">
+                    <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+                        <a href="{{route('participation',[$slug])}}" class=""><img src="{{ asset('assets/image/Participations.png') }}" alt="Tuple"></a>
+                        
                     </div>
                     <div class="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-                        <img src="{{ asset('assets/image/Quick-Enqiry.png') }}" alt="Tuple">
-                    </div> -->
+                        <a href="{{route('enquiry')}}" class=""><img src="{{ asset('assets/image/Quick-Enqiry.png') }}" alt="Tuple"></a>
+                        
+                    </div>
+                 
 
                 </div>
             </div>

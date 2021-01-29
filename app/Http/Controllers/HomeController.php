@@ -9,6 +9,7 @@ use App\Models\Project;
 use App\Models\RedxSpecific;
 use App\Models\Gallery;
 use App\Models\Page;
+use App\Models\ParticipationEvent;
 class HomeController extends Controller
 {
     /** show home page
@@ -144,6 +145,21 @@ class HomeController extends Controller
         }
     }
 
+   /** show enquiry page
+     * return view
+     */
+    public function enquiry()
+    {
+        $category_obj = new Category();
+        return view('enquiry', ['category_obj' => $category_obj]);
+    }
+
+    public function participation($slug = null)
+    {
+        $event = ParticipationEvent::where('slug', $slug)->first();
+        $events = ParticipationEvent::where('status',1)->get(); 
+        return view('event', ['event'=> $event, 'events' => $events]);
+    }
     
   
 }

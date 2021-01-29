@@ -54,6 +54,6 @@ class RedxSpecific extends Model
      */
     public function firstRexSpecific()
     {
-        return $this->first();
+        return $this->where('status', 1)->first();
     }
 }

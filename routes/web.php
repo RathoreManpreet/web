@@ -39,6 +39,8 @@ Route::get( '/quality', [HomeController::class, 'quality'])->name('quality');
 
 Route::get( '/projects/{project_name?}', [HomeController::class, 'project'])->name('project');
 
+Route::get('/enquiry',[HomeController::class,'enquiry'])->name('enquiry');
+Route::get('/participation/{slug?}',[HomeController::class,'participation'])->name('participation');
 // Route::get('/redx-specific-2', function(){
 //     return view('redx-specific2');
 // });
@@ -105,5 +107,16 @@ Route::group(['middleware' => [], 'as' => 'admin.', 'prefix' => 'admin'], functi
         Route::get('delete/page/image/{image_id}', ['middleware' => [], 'as' => 'delete.page.image', 'uses' => 'App\Http\Controllers\PageController@deletePageImage']);
         Route::post('quality', ['middleware' => [], 'as' => 'update.quality', 'uses' => 'App\Http\Controllers\PageController@updateQuality']);
         Route::post('about', ['middleware' => [], 'as' => 'update.about', 'uses' => 'App\Http\Controllers\PageController@updateAbout']);
+
+
+
+        Route::get('events', ['middleware' => [], 'as' => 'event', 'uses' => 'App\Http\Controllers\EventController@showEvents']);
+        Route::get('event/add', ['middleware' => [], 'as' => 'add.event', 'uses' => 'App\Http\Controllers\EventController@showAddEvent']);
+        Route::post('event/add', ['middleware' => [], 'as' => 'add.event.action', 'uses' => 'App\Http\Controllers\EventController@addEvent']);
+        Route::get('event/edit/{event_id}', ['middleware' => [], 'as' => 'edit.event', 'uses' => 'App\Http\Controllers\EventController@showEditEvent']);
+        Route::post('event/update/{event_id}', ['middleware' => [], 'as' => 'update.event', 'uses' => 'App\Http\Controllers\EventController@updateEvent']);
+        Route::get('delete/event/image/{image_id}', ['middleware' => [], 'as' => 'delete.event.image', 'uses' => 'App\Http\Controllers\EventController@deleteEventImage']);
+        Route::get('delete/event/{event_id}', ['middleware' => [], 'as' => 'delete.event', 'uses' => 'App\Http\Controllers\EventController@deleteEvent']);
+
     });
 });
